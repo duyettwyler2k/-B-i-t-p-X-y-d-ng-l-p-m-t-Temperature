@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+class Temperature{
+    constructor(C) {
+         this.C=C
+    }
+      getF(){
+     return (this.C*1.8)+32
+    }
+     getK(){
+        return this.C+273.15
+     }
+}
+var nhietdo=new Temperature(25)
+let x=nhietdo.getF()
+let y=nhietdo.getK()
+alert("nhiet do F la " + x + " nhiet do K la " + y)
+</script>
+</body>
+</html>
